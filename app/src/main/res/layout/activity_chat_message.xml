@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ous.esprit.tn.coachapp.ChatMessageActivity">
+    
+    
+    <ImageButton
+        android:id="@+id/emoji_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_action_emicon"
+        android:background="@null"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/send_msg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/send_msg"
+        android:layout_toRightOf="@id/emoji_btn"
+        android:layout_alignParentBottom="true"
+        android:hint="Enter your Message"/>
+    
+    <ListView
+        android:id="@+id/list_of_msg"
+        android:stackFromBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/emoji_btn"></ListView>
+
+</RelativeLayout>

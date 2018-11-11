@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/card_view"
+    card_view:cardUseCompatPadding="true"
+    android:layout_gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linnear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/comment_img_users"
+                android:paddingBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                />
+
+            <TextView
+                android:id="@+id/comment_email_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:background="@color/white"
+                android:text="Nizar Elhraiech"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linnear"
+            android:weightSum="6">
+            <TextView
+                android:id="@+id/comment_contents"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:text="alooo"
+                android:paddingLeft="30dp"
+                android:paddingTop="8dp"
+                android:layout_height="29dp"
+                android:layout_weight="4"
+                />
+            <TextView
+                android:id="@+id/comment_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Posted dsdqsssssssss"
+                android:layout_below="@id/linnear"
+                android:paddingLeft="65dp"
+                android:layout_weight="2.5"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

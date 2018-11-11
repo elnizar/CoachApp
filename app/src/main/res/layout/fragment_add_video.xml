@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="60dp"
+    tools:context="Fragments.AddVideoFragment">
+
+
+    <FrameLayout
+        android:id="@+id/youtube_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_url_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/url_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/URL"
+            android:inputType="textUri"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+
+            android:textColor="@color/black" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_domain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/domain"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        />
+
+    <Button
+        android:id="@+id/addVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4f555b"
+        android:text="Add Video"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/gotochanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="225dp"
+        android:text="Go To my chanel"
+        android:textSize="15dp"
+
+        />
+
+</LinearLayout>
+
+

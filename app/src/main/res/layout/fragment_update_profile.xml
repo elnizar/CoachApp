@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:background="@drawable/background_color"
+    tools:context="ous.esprit.tn.coachapp.Fragments.UpdateProfileFragment"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/img_profile"
+        android:layout_width="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="120dp"
+        android:src="@drawable/profil"
+        android:clickable="true"
+        />
+
+
+
+    <EditText
+        android:id="@+id/firsname"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/input"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />
+
+
+
+
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@drawable/input"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#41b989"
+        android:text="Save Changes"
+        android:background="@drawable/rounded_rectangle_1"
+        android:id="@+id/save"
+
+        />
+
+
+</LinearLayout>

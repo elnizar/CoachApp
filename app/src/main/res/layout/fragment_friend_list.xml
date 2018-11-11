@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ous.esprit.tn.coachapp.Fragments.FriendListFragment">
+
+    <ListView
+        android:id="@+id/lst_friends"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_create_chat"
+        android:text="CREATE CHAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

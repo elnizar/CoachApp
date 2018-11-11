@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_item1"
+        android:icon="@drawable/ic_action_name_home"
+        android:title="wiiw"/>
+    <item
+        android:id="@+id/action_item2"
+        android:icon="@drawable/ic_action_name_home"
+        android:title="hama"/>
+    <item
+        android:id="@+id/action_item3"
+        android:icon="@drawable/ic_action_name_profile"
+        android:title="ttttt"/>
+
+    <item
+        android:id="@+id/action_item4"
+        android:icon="@drawable/ic_action_name_profile"
+        android:title="expert"/>
+</menu>
